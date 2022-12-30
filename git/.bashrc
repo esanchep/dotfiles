@@ -2,6 +2,26 @@ source ~/.bash_profile
 
 alias dc="docker-compose"
 
+dci() {
+	echo "dc -> docker-compose shorthand"
+	echo "---------------"
+	echo "dcf -> prints the value of the actual compose file used"
+	echo "dcf <filename> -> updates the compose file to be used"
+	echo "---------------"
+	echo "dcps -> docker-compose ps"
+	echo "---------------"
+	echo "dcu -> docker-compose up"
+	echo "	param1 ->	<container_name> -> docker-compose up <container_name>"
+	echo "	param2 ->	-d -> docker-compose up -d <container_name>"
+	echo "---------------"
+	echo "dcd -> docker-compose down"
+	echo "---------------"
+	echo "dcs -> docker-compose stop"
+	echo "dcs <container_name> -> docker-compose stop <container_name>"
+	echo "---------------"
+	echo "dcrm -> docker-compose rm -sfv (stops+removes all containers and volumes)"
+}
+
 dcf() {
 	if [ -z "$1" ]; then
 		echo "Selected compose file: ${DOCKER_COMPOSE_YML}"
