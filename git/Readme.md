@@ -1,7 +1,7 @@
 # Readme
 
 ## Purpose
-These files contain a series of shortcuts for docker-compose commands so it's faster to work with.
+These files contain a series of shortcuts for docker-compose commands so it's faster to work with it.
 
 ## Installation
 Just copy-paste `.bashrc` and `.bash_profile` files to the home directory (~).
