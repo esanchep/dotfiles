@@ -19,10 +19,9 @@ dcps() {
 }
 
 dcu() {
-	local containe="$1"
+	local container="$1"
 	local detach="$2"
-	echo "$detach $container"
-	dc -f $DOCKER_COMPOSE_YML up $detach $containe
+	dc -f $DOCKER_COMPOSE_YML up $detach $container
 }
 
 dcd() {
