@@ -10,7 +10,7 @@ dcf() {
 		local current_file=${DOCKER_COMPOSE_YML}
 		local new_file=$1
 		export DOCKER_COMPOSE_YML=$new_file
-		sed -i -n "s/$current_file/$new_file/" ~/.bash_profile
+		sed -i "s/$current_file/$new_file/" ~/.bash_profile
 	fi
 }
 
